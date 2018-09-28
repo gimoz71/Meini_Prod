@@ -1,0 +1,346 @@
+/* font Awesome http://fontawesome.io*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+/* Animation.css */
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+
+/*-------------------------------*/
+/* override e aggiunte a stili bootstrap      */
+/*-------------------------------*/
+.col-lg-5,
+.col-md-5,
+.col-sm-5,
+.col-xs-5 {
+    position     : relative;
+    min-height   : 1px;
+    padding-right: 10px;
+    padding-left : 10px;
+}
+
+.col-xs-5 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.glyphicon {
+    position: inherit;
+    // vertical-align: -.15em;
+}
+
+.row {
+    &.no-gutters {
+        margin-right: 0;
+        margin-left : 0;
+        width       : 100%;
+
+        & > [class*=" col-"],
+        & > [class^="col-"] {
+            padding-right: 0;
+            padding-left : 0;
+        }
+    }
+
+    &.nomargin {
+        margin-left : -10px !important;
+        margin-right: -10px !important;
+    }
+
+}
+
+.top-buffer {
+    margin-top: 30px !important;
+}
+.bottom-buffer {
+    margin-bottom: 30px !important;
+}
+
+.gap {
+    & > [class*=" col-"],
+    & > [class^="col-"] {
+        &:first-of-type {
+            padding-right: 5px;
+        }
+
+        &:last-of-type {
+            padding-left: 5px;
+        }
+    }
+    @media (max-width: $screen-sm ) {
+        & > [class*=" col-"],
+        & > [class^="col-"] {
+            &:first-of-type {
+                padding-right : 0;
+                padding-bottom: 5px;
+            }
+
+            &:last-of-type {
+                padding-left: 0;
+                padding-top : 5px;
+            }
+        }
+    }
+}
+// 20px gutter
+.gutter-20.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.gutter-20 > [class^="col-"], .gutter-20 > [class^=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+// 10px gutter
+.gutter-10.row {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+// 0px gutter
+.gutter-0.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
+}
+.row.row-eq-height {
+    display        : flex;
+    /*| row-reverse | column | column-reverse*/
+    flex-direction : row;
+    /*flex-start | flex-end | center | space-between | space-around*/
+    justify-content: space-between;
+}
+.col-same-height {
+    @media (min-width: $screen-sm ) {
+        height: 270px;
+        .subcategory ul {
+            padding-left: 100px !important;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+/*--------------------------------------------------*/
+/* inizio customizzazioni layout e stili di default */
+/*--------------------------------------------------*/
+body,
+html {
+    height: 100%;
+}
+
+html {
+    padding    : 0;
+    // font-family: "Source Sans Pro",Helvetica,sans-serif;
+    // @media (min-width: $screen-sm) {
+    //     margin: 0px;
+    // }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+table {
+    width: 100%;
+}
+input {
+    padding: 5px;
+    font-size: 1em;
+    text-align:center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px $standard-border-color;
+    &::placeholder {
+        color: $standard-border-color;
+    }
+}
+button:focus {outline:0;}
+
+// navbar di base
+
+.navbar {
+    margin-bottom: 0;
+}
+.nav-custom {
+    li {
+        a {
+            color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(255, 125, 125) !important;
+        }
+        &.active {
+            a {
+                color: #DD1111;
+            }
+        }
+    }
+}
+.search {
+    background-color: #DD1111;
+    border-color: #DD1111;
+    .navbar-text {
+       color: #fff;
+    }
+    .form-group {
+        width: 15%;
+        .form-control {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.logo-header {
+    @include text-hide;
+    width: 156px;
+    height: 50px;
+    margin-left: 60px;
+    background: url(../images/logo-small.png) no-repeat center center;
+    background-size: cover;
+}
+
+.content {
+    margin: 30px 60px;
+    @media (max-width: $screen-md ) {
+        margin: 20px 30px;
+    }
+    @media (max-width: $screen-sm ) {
+        margin: 20px 0px;
+    }
+}
+
+.masonry {
+    *:before, *:after {box-sizing:  border-box !important};
+    
+    &.row {
+        -moz-column-width: 18em;
+        -webkit-column-width: 18em;
+        -moz-column-gap: 1em;
+        -webkit-column-gap:1em; 
+    }
+    .item {
+        display: inline-block;
+        padding:  .25rem;
+        width:  100%; 
+        .well {
+            position:relative;
+            display: block;
+            background: #fff;
+            text-align: center;
+            padding:0;
+            border: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.thumb-item {
+    border: solid 1px #ccc;
+    padding: .5em;
+}
+
+.immobile {
+    width: 100%;
+    padding: 10px 15px;
+    background: #DD1111;
+    color: #fff;
+    margin: 0;
+    font-size: 1.5em;
+}
+.tipologia, .prezzo {
+    color: #dd1111;
+    padding: 0px 15px;
+    font-size: 1em;
+}
+.info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        padding: 5px 10px;
+        margin: 0 15px;
+        border-bottom: dotted 1px #ccc;
+        color: #888888
+    }
+    span {
+        display: inline-block;
+        width: 40%;
+        color: #000000
+    }
+}
+
+.share {
+    padding: 10px 15px;
+    span {
+        width: 40%;
+        display: inline-block;
+    }
+    a {
+        margin-right: 8px;
+        display: inline-block;
+
+    }
+}
+
+
+footer {
+    padding: 30px 60px;
+    background: #333;
+    color: #fff;
+    .fiaip-footer {
+        float: right;
+    }
+    @media (max-width: $screen-md ) {
+        padding: 0px 30px;
+        text-align: center;
+        .fiaip-footer {
+            float: none;
+        }
+        div {
+            margin: 25px 0;
+        }
+    }
+    @media (max-width: $screen-sm ) {
+        padding: 0px 20px;
+    }
+}
