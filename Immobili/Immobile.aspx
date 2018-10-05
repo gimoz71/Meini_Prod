@@ -189,23 +189,16 @@
         <div class="row">
             <div class="col-md-8 wow fadeInUpSmall slsh" data-wow-delay="0s">
                 <div class="slideshow-container">
-                    <div class="mySlides wow fadeIn">
-                        <div class="numbertext">1 / 3</div>
-                        <img class="thumb-item" src="/assets/images/slider_home.jpg" id="img_immagine" runat="server">
-                        <div class="text">Caption Text</div>
-                    </div>
                     
-                    <div class="mySlides wow fadeIn">
-                        <div class="numbertext">2 / 3</div>
-                        <img class="thumb-item" src="/assets/images/slider_home.jpg" >
-                        <div class="text">Caption Two</div>
-                    </div>
-                    
-                    <div class="mySlides wow fadeIn">
-                        <div class="numbertext">3 / 3</div>
-                        <img class="thumb-item" src="/assets/images/slider_home.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
+                    <asp:Repeater ID="rpt_immagini" runat="server">
+                        <ItemTemplate>
+                            <div class="mySlides wow fadeIn">
+                                <div class="numbertext"><asp:Literal ID="ltl_number" runat="server"></asp:Literal></div>
+                                <img class="thumb-item" src="/assets/images/slider_home.jpg" id="img_immagine" runat="server">
+                                <div class="text"><asp:Literal ID="ltl_caption" runat="server"></asp:Literal></div>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
 
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
