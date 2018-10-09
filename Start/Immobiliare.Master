@@ -73,9 +73,6 @@
                             <a href="/Start/Index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_home")%></a>
                         </li>
                         <li>
-                            <a href="/Start/Contatti.aspx" id="a_contatti" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_contatti")%></a>
-                        </li>
-                        <li>
                             <asp:HyperLink ID="a_campagna" runat="server" NavigateUrl="/Ricerca/Campagna.aspx">
                                 <%=Lingua.CaricaLingua("lgl_master_menu_campagna")%>
                             </asp:HyperLink>
@@ -94,6 +91,10 @@
                             <asp:HyperLink ID="a_mare" runat="server" NavigateUrl="/Ricerca/Mare.aspx">
                                 <%=Lingua.CaricaLingua("lgl_master_menu_mare")%>
                             </asp:HyperLink>
+                        </li>
+                        <li>
+                            <a href="/Start/Contatti.aspx" id="a_contatti" runat="server">
+                                <%=Lingua.CaricaLingua("lgl_master_menu_contatti")%></a>
                         </li>
                     </ul>
                 </div>

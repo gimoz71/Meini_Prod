@@ -11713,17 +11713,21 @@ button:focus {
 }
 
 .search {
-  background-color: #DD1111;
-  border-color: #DD1111;
+  background-color: #c9302c;
+  border-color: #aa2925;
 }
 .search .navbar-text {
   color: #fff;
   margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 13px;
 }
 .search .navbar-toggle {
   border-color: #fff;
   color: #fff;
   margin-right: 0;
+  padding: 4px 10px;
+  border-radius: 3px;
 }
 .search .navbar-collapse, .search .navbar-form {
   border: none;
@@ -11733,18 +11737,32 @@ button:focus {
   padding-top: 0;
   padding-bottom: 0;
 }
+@media (max-width: 768px) {
+  .search .navbar-form {
+    margin: 10px 0;
+    padding: 0;
+  }
+}
 .search .form-group {
-  width: 15%;
+  width: 14%;
+  margin: 0 2px;
 }
 .search .form-group .form-control {
   width: 100%;
   height: auto;
   border-radius: 3px;
   border: none;
+  text-align: inherit;
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+  .search .form-group {
+    margin: 4px 0;
+  }
+}
+@media (max-width: 768px) {
   .search .form-group {
     width: 100%;
+    margin: 4px 0;
   }
 }
 @media (max-width: 768px) {
@@ -11843,11 +11861,12 @@ button:focus {
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 1em;
-  background: #DD1111;
+  background: #c9302c;
   color: #fff;
   margin: 0;
   font-size: 1.5em;
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 .tipologia, .prezzo {

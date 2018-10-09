@@ -35,10 +35,11 @@
                     <div class="form-group">
                         <asp:DropDownList id="ddl_superficie" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
-                    
-                    <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-default search-button ">
-                        <%=Lingua.CaricaLingua("lgl_ricerca_cerca")%>
-                    </asp:LinkButton>
+                    <div class="form-group">
+                        <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-danger btn-block btn-search-button ">
+                            <%=Lingua.CaricaLingua("lgl_ricerca_cerca")%>
+                        </asp:LinkButton>
+                    </div>
                 </div>
             </div>
             <!--/.nav-collapse -->

@@ -232,16 +232,20 @@ button:focus {outline:0;}
 }
 
 .search {
-    background-color: #DD1111;
-    border-color: #DD1111;
+    background-color: #c9302c;
+    border-color: #aa2925;
     .navbar-text {
        color: #fff;
        margin-left: 0;
+       margin-bottom: 0;
+       margin-top: 13px;
     }
     .navbar-toggle {
         border-color: #fff;
         color: #fff;
         margin-right: 0;
+        padding: 4px 10px;
+        border-radius: $radius;
     }
     .navbar-collapse, .navbar-form {
         border: none;
@@ -250,17 +254,27 @@ button:focus {outline:0;}
     .navbar-form {
         padding-top: 0;
         padding-bottom: 0;
+        @media (max-width: $screen-sm ) {
+            margin: 10px 0;
+            padding: 0;
+        }
     }
     .form-group {
-        width: 15%;
+        width: 14%;
+        margin: 0 2px;
         .form-control {
             width: 100%;
             height: auto;
             border-radius: $radius;
             border: none;
+            text-align: inherit;
         }
-        @media (max-width: $screen-xs ) {
+        @media (max-width: $screen-lg ) {
+            margin: 4px 0
+        }
+        @media (max-width: $screen-sm ) {
             width: 100%;
+            margin: 4px 0
         }
     }
     @media (max-width: $screen-sm ) {
@@ -348,11 +362,12 @@ button:focus {outline:0;}
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 1em;
-    background: #DD1111;
+    background: #c9302c;
     color: #fff;
     margin: 0;
     font-size: 1.5em;
     border-radius: $radius;
+    margin-bottom: 20px;
 }
 .tipologia, .prezzo {
     color: #dd1111;

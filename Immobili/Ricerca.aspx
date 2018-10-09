@@ -13,10 +13,9 @@
     <div class="content">
         <div class="container">
             <div class="col-lg-12">
-                <h3>
+                <!--<h3>
                     <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>&nbsp;<asp:Literal ID="ltl_ricerca_per"
-                        runat="server"></asp:Literal></h3>
-                <br />
+                        runat="server"></asp:Literal></h3>-->
                 <div class="row">
                     <div style="text-align: center; width: 100%;" id="div_nessun_risultato" runat="server">
                         <h2>
