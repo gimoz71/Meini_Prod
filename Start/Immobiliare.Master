@@ -42,66 +42,73 @@
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true"
         EnablePageMethods="true" EnableScriptLocalization="true" AsyncPostBackTimeout="3600">
     </telerik:RadScriptManager>
-    <div class="container">
+    <div class="container-fluid">
         <header id="header">
-            <div id="page-title" class="hidden-xs">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="logo-header">Meini</h1>
+            <div class="container">
+                <div id="page-title" class="hidden-xs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="logo-header">Meini</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand" href="#">Project name</a>-->
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav nav-justified nav-custom">
-                    <li class="active">
-                        <a href="/Start/Index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_home")%></a>
-                    </li>
-                    <li>
-                        <a href="/Start/Contatti.aspx" id="a_contatti" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_contatti")%></a>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="a_campagna" runat="server" NavigateUrl="/Ricerca/Campagna.aspx">
-                            <%=Lingua.CaricaLingua("lgl_master_menu_campagna")%>
-                        </asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="a_borghi" runat="server" NavigateUrl="/Ricerca/Borghi.aspx">
-                            <%=Lingua.CaricaLingua("lgl_master_menu_borghi")%>
-                        </asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="a_cecina" runat="server" NavigateUrl="/Ricerca/Cecina.aspx">
-                            <%=Lingua.CaricaLingua("lgl_master_menu_cecina")%>
-                        </asp:HyperLink>
-                    </li>
-                    <li>
-                        <asp:HyperLink ID="a_mare" runat="server" NavigateUrl="/Ricerca/Mare.aspx">
-                            <%=Lingua.CaricaLingua("lgl_master_menu_mare")%>
-                        </asp:HyperLink>
-                    </li>
-                </ul>
+            <div class="container">
+                <h1 class="logo-header logo-header-mobile hidden visible-xs">Meini</h1>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Project name</a>-->
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav nav-justified nav-custom">
+                        <li class="active">
+                            <a href="/Start/Index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_home")%></a>
+                        </li>
+                        <li>
+                            <a href="/Start/Contatti.aspx" id="a_contatti" runat="server"><%=Lingua.CaricaLingua("lgl_master_menu_contatti")%></a>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="a_campagna" runat="server" NavigateUrl="/Ricerca/Campagna.aspx">
+                                <%=Lingua.CaricaLingua("lgl_master_menu_campagna")%>
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="a_borghi" runat="server" NavigateUrl="/Ricerca/Borghi.aspx">
+                                <%=Lingua.CaricaLingua("lgl_master_menu_borghi")%>
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="a_cecina" runat="server" NavigateUrl="/Ricerca/Cecina.aspx">
+                                <%=Lingua.CaricaLingua("lgl_master_menu_cecina")%>
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="a_mare" runat="server" NavigateUrl="/Ricerca/Mare.aspx">
+                                <%=Lingua.CaricaLingua("lgl_master_menu_mare")%>
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!--/.nav-collapse -->
         </nav>
         <asp:ContentPlaceHolder ID="body" runat="server">
         </asp:ContentPlaceHolder>
         <footer>
-            <div class="row">
-                <div class="col-md-4"><b>MEINI IMMOBILIARE</b><br>Piazza Matteotti n. 2<br>56046 Riparbella (PISA)<br>REA: PI190214<br>P.IVA: 018350490</div>
-                <div class="col-md-4"><b>CONTATTI</b><br>Tel. 0586-699310<br>Fax 0586-699310<br>cristiano@meini.it<br>cristiano@pec.meini.it</div>
-                <div class="col-md-4"><img class="fiaip-footer" src="/assets/images/logo-fiaip.gif"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"><b>MEINI IMMOBILIARE</b><br>Piazza Matteotti n. 2<br>56046 Riparbella (PISA)<br>REA: PI190214<br>P.IVA: 018350490</div>
+                    <div class="col-md-4"><b>CONTATTI</b><br>Tel. 0586-699310<br>Fax 0586-699310<br>cristiano@meini.it<br>cristiano@pec.meini.it</div>
+                    <div class="col-md-4"><img class="fiaip-footer" src="/assets/images/logo-fiaip.gif"></div>
+                </div>
             </div>
         </footer>
     </div>

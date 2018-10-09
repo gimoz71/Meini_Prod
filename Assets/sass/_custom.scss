@@ -4,6 +4,8 @@
 // @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
 
+$radius: 3px;
+
 /*-------------------------------*/
 /* override e aggiunte a stili bootstrap      */
 /*-------------------------------*/
@@ -38,6 +40,10 @@
         width: 20%;
         float: left;
     }
+}
+button, .btn {
+    border-radius: $radius;
+    border: none;
 }
 
 .glyphicon {
@@ -166,6 +172,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 
 }
 
@@ -197,6 +204,10 @@ button:focus {outline:0;}
 }
 .nav-custom {
     li {
+        @media (min-width: $screen-sm ) {
+            border-right: solid 1px rgba(255,255,255,.1);
+            border-left: solid 1px #000;
+        }
         a {
             color: #fff;
             padding-top: 15px;
@@ -214,36 +225,82 @@ button:focus {outline:0;}
         }
     }
 }
+
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .search {
     background-color: #DD1111;
     border-color: #DD1111;
     .navbar-text {
        color: #fff;
+       margin-left: 0;
+    }
+    .navbar-toggle {
+        border-color: #fff;
+        color: #fff;
+        margin-right: 0;
+    }
+    .navbar-collapse, .navbar-form {
+        border: none;
+        box-shadow: none;
+    }
+    .navbar-form {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .form-group {
         width: 15%;
         .form-control {
             width: 100%;
             height: auto;
+            border-radius: $radius;
+            border: none;
+        }
+        @media (max-width: $screen-xs ) {
+            width: 100%;
         }
     }
+    @media (max-width: $screen-sm ) {
+            padding: 0 10px;
+            .search-button{
+                width: 100%;
+            }
+        }
 }
 .logo-header {
     @include text-hide;
-    width: 156px;
+    width: 600px;
     height: 50px;
-    margin-left: 60px;
-    background: url(../images/logo-small.png) no-repeat center center;
+    //margin-left: 60px;
+    background: url(../images/logo-small.png) no-repeat center left;
     background-size: cover;
+    margin-top: 10px;
+}
+.logo-header-mobile {
+    width: 240px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    margin: 0;
+    background: url(../images/logo-small-mobile.png) no-repeat center left;
+    background-size: contain;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 .content {
-    margin: 30px 60px;
+    margin: 30px 0;
     @media (max-width: $screen-md ) {
-        margin: 20px 30px;
+        margin: 20px 0;
     }
     @media (max-width: $screen-sm ) {
-        margin: 20px 0px;
+        margin: 20px 0;
     }
 }
 
@@ -273,32 +330,42 @@ button:focus {outline:0;}
         }
     }
 }
+.card:link, .card:hover {
+    text-decoration: none;
+
+}
 
 .thumb-item {
     border: solid 1px #ccc;
     padding: .5em;
+    width: 100%;
+    @media (max-width: $screen-md ) {
+        margin: 40px 0 20px 0;
+    }
 }
 
 .immobile {
     width: 100%;
     padding: 10px 15px;
+    margin-bottom: 1em;
     background: #DD1111;
     color: #fff;
     margin: 0;
     font-size: 1.5em;
+    border-radius: $radius;
 }
 .tipologia, .prezzo {
     color: #dd1111;
-    padding: 0px 15px;
-    font-size: 1em;
+    padding: 0;
+    font-size: 1.3em;
 }
 .info {
     list-style: none;
     padding: 0;
     margin: 0;
     li {
-        padding: 5px 10px;
-        margin: 0 15px;
+        padding: 5px 0;
+        margin: 0;
         border-bottom: dotted 1px #ccc;
         color: #888888
     }
@@ -324,7 +391,7 @@ button:focus {outline:0;}
 
 
 footer {
-    padding: 30px 60px;
+    padding: 30px 0;
     background: #333;
     color: #fff;
     .fiaip-footer {

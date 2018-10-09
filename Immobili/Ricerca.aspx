@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <div class="content">
-        <div class="row">
+        <div class="container">
             <div class="col-lg-12">
                 <h3>
                     <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>&nbsp;<asp:Literal ID="ltl_ricerca_per"
