@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <h5 class="prezzo">
-                                                Prezzo: &euro;: <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></h5>
+                                                Prezzo: <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></h5>
                                             <ul class="info">
                                                 <li><span>Abitazione:</span><asp:Literal ID="ltl_superfice" runat="server"></asp:Literal></li>
                                                 <li><span>Camere:</span><asp:Literal ID="ltl_camere" runat="server"></asp:Literal></li>

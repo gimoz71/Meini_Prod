@@ -11687,9 +11687,13 @@ button:focus {
   margin-bottom: 0;
 }
 
+.nav-custom {
+  border-left: solid 1px rgba(255, 255, 255, 0.2);
+  border-right: solid 1px #000;
+}
 @media (min-width: 768px) {
   .nav-custom li {
-    border-right: solid 1px rgba(255, 255, 255, 0.1);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
     border-left: solid 1px #000;
   }
 }
@@ -11780,7 +11784,7 @@ button:focus {
   text-shadow: none;
   background-color: transparent;
   border: 0;
-  width: 600px;
+  width: 720px;
   height: 50px;
   background: url(../images/logo-small.png) no-repeat center left;
   background-size: cover;
@@ -11820,10 +11824,24 @@ button:focus {
   box-sizing: border-box !important;
 }
 .masonry.row {
-  -moz-column-width: 18em;
-  -webkit-column-width: 18em;
+  -moz-column-width: 16em;
+  -webkit-column-width: 16em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;
+}
+@media (max-width: 1200px) {
+  .masonry.row {
+    -moz-column-width: 12em;
+    -webkit-column-width: 12em;
+  }
+}
+@media (max-width: 992px) {
+  .masonry.row {
+    -moz-column-gap: .5em;
+    -webkit-column-gap: .5em;
+    -moz-column-width: 10em;
+    -webkit-column-width: 10em;
+  }
 }
 .masonry .item {
   display: inline-block;
@@ -11840,6 +11858,16 @@ button:focus {
 }
 .masonry .item .well img {
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .masonry .item .well {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 992px) {
+  .masonry .item .well {
+    margin-bottom: .5em;
+  }
 }
 
 .card:link, .card:hover {
@@ -11905,8 +11933,28 @@ button:focus {
 }
 
 footer {
-  padding: 30px 0;
-  background: #333;
+  padding: 0;
+  background: #222;
+  color: #fff;
+}
+footer .row.section {
+  border-left: solid 1px rgba(255, 255, 255, 0.2);
+  border-right: solid 1px #000;
+}
+footer .row .section {
+  border-right: solid 1px rgba(255, 255, 255, 0.2);
+  border-left: solid 1px #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p, footer a {
+  font-size: 15px;
+  color: #ccc;
+}
+footer i.fa {
+  font-size: .75em;
+}
+footer a:hover {
   color: #fff;
 }
 footer .fiaip-footer {
@@ -11914,7 +11962,6 @@ footer .fiaip-footer {
 }
 @media (max-width: 992px) {
   footer {
-    padding: 0px 30px;
     text-align: center;
   }
   footer .fiaip-footer {
@@ -11922,6 +11969,13 @@ footer .fiaip-footer {
   }
   footer div {
     margin: 25px 0;
+  }
+  footer .row.section {
+    border: none;
+  }
+  footer .row .section {
+    border: none;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {

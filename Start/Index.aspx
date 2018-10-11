@@ -94,8 +94,8 @@
                         e HOUSE24</p>
                 </div>
             </div>
-            <div class="masonry row">
-                <div class="col-md-12 wow fadeInUpSmall" data-wow-delay="0.5s">
+            <div class="col-lg-12">
+                <div class="masonry row">
                     <div class="item wow fadeInUpSmall" data-wow-delay="0.1s">
                         <div class="well">
                             <img src="/assets/images/mlsfiaip.jpg"></div>

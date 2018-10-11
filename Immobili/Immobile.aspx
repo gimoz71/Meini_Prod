@@ -172,7 +172,7 @@
         transition: background-color 0.6s ease;
         }
 
-        .active, .dot:hover {
+        .slideshow-container .active, .dot:hover {
         background-color: #717171;
         }
 
@@ -226,7 +226,7 @@
                             <li><span><%=Lingua.CaricaLingua("lgl_immobili_camere")%>:</span><asp:Literal ID="ltl_camere" runat="server"></asp:Literal></li>
                             <li><span><%=Lingua.CaricaLingua("lgl_immobili_info_ce")%>:</span><asp:Literal ID="ltl_ai_classe" runat="server"></asp:Literal></li>
                             <li><span>Condizioni:</span><asp:Literal ID="ltl_tipo_annuncio" runat="server"></asp:Literal></li>
-                            <li><span>Prezzo:</span>€ <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></li>
+                            <li><span>Prezzo:</span> <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></li>
                         </ul>
                     </div>
                     <div class="row hidden">
@@ -285,7 +285,7 @@
                             <span class="fa fa-linkedin"></span></a>
                     </p>
                     <div class="col-xs-12"style="margin-top: 20px;">
-                        <a href="#" class="btn btn-danger">Stampa scheda</a> 
+                        <a href="#" onClick="window.print()" class="btn btn-danger">Stampa scheda</a> 
                         
                         <a data-toggle="modal" href="#contactAgent" class="btn btn-danger"
                             id="btn_info" runat="server">
