@@ -192,7 +192,7 @@ input {
     border-right: none;
     border-bottom: solid 1px $standard-border-color;
     &::placeholder {
-        color: $standard-border-color;
+        color: #555555 !important;
     }
 }
 button:focus {outline:0;}

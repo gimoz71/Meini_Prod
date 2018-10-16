@@ -11676,7 +11676,7 @@ input {
   border-bottom: solid 1px #dbd4d1;
 }
 input::placeholder {
-  color: #dbd4d1;
+  color: #555555 !important;
 }
 
 button:focus {
