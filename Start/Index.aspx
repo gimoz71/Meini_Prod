@@ -9,11 +9,12 @@
     <nav class="navbar navbar-inverse search wow fadeIn" data-wow-delay="0.2s">
         <div class="container">
             <div class="navbar-header">
-                <p class="navbar-text hidden visible-xs" style="float: left;">Cerca un immobile:</p>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#searchbar" aria-expanded="false"
+                <!--<p class="navbar-text hidden visible-xs" style="float: left;"></p>-->
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#searchbar" aria-expanded="false"
                     aria-controls="navbar">
-                    <span class="sr-only">Search</span>
-                    <span>Search</span>
+                    <span class="sr-only">Cerca un immobile</span>
+                    <span>Cerca un immobile</span>
+                    <span class="caret"></span>
                 </button>
                 <!--<a class="navbar-brand" href="#">Project name</a>-->
             </div>
@@ -36,7 +37,7 @@
                         <asp:DropDownList id="ddl_superficie" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
                     <div class="form-group">
-                        <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-danger btn-block btn-search-button ">
+                        <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-danger btn-block search-button ">
                             <%=Lingua.CaricaLingua("lgl_ricerca_cerca")%>
                         </asp:LinkButton>
                     </div>

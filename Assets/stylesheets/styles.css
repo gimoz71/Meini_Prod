@@ -11679,6 +11679,10 @@ input::placeholder {
   color: #555555 !important;
 }
 
+.contactPageForm input {
+  text-align: left !important;
+}
+
 button:focus {
   outline: 0;
 }
@@ -11748,15 +11752,22 @@ button:focus {
   }
 }
 .search .form-group {
-  width: 14%;
+  width: 13%;
   margin: 0 2px;
 }
 .search .form-group .form-control {
   width: 100%;
-  height: auto;
+  height: 2.15em;
   border-radius: 3px;
   border: none;
   text-align: inherit;
+  background-color: #fff !important;
+}
+.search .form-group select.form-control {
+  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 @media (max-width: 1200px) {
   .search .form-group {
@@ -11982,6 +11993,10 @@ footer .fiaip-footer {
   footer {
     padding: 0px 20px;
   }
+}
+
+.contactPageForm {
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
