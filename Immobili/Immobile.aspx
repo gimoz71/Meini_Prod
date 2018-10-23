@@ -91,15 +91,23 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
     <style type="text/css">
+        .print-header {
+            display: none;
+            margin-top: 30px;
+        }
         @media print {
-            #header,navbar,footer, .text, button, .btn, #ct-ultimate-gdpr-cookie-open {
+            #header,navbar,footer, .text, button, .btn, #ct-ultimate-gdpr-cookie-open, .mySlides .numbertext, .mySlides .text {
                 display: none;
             }
             .break {page-break-after: always;}
+            .print-header {
+                display: block;
+            }
         }
     </style>
 
     <style>
+    
         .slsh * {box-sizing:border-box}
 
         /* Slideshow container */
@@ -194,7 +202,15 @@
         to {opacity: 1}
         }
     </style>
-
+    <div class="print-header">
+    <table><tr><td style="padding-right: 20px;">
+        <img src="/Assets/images/logo-email.png"></td>
+        <td>
+        <small>Piazza Matteotti n. 2 - 56046 Riparbella (PISA) | REA: PI190214 P.IVA: 018350490<br>Tel. 0586-699310 - Fax 0586-699310 | cristiano@meini.it - cristiano@pec.meini.it</small>
+        </td>
+        </tr>
+        </table>
+    </div>
     <div class="content">
         <div class="container">
             <div class="row break">
@@ -287,7 +303,7 @@
                     <div class="col-xs-12"style="margin-top: 20px;">
                         <a href="#" onClick="window.print()" class="btn btn-danger">Stampa scheda</a> 
                         
-                        <a data-toggle="modal" href="#contactAgent" class="btn btn-danger"
+                        <a data-toggle="modal" href="#contactAgent" class="btn btn-danger hidden"
                             id="btn_info" runat="server">
                             <%=Lingua.CaricaLingua("lgl_immobile_richiedi_info")%>
                         </a>

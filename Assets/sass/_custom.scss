@@ -196,6 +196,27 @@ input {
     }
    
 }
+
+ul.list {
+    list-style-type: none;
+    li {
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            position: absolute;
+            left: -24px;
+            right: auto;
+            top: 7px;
+            border-radius: 50%;
+        }
+
+    }
+}
+
  .contactPageForm input {
     text-align: left !important;
 }
@@ -290,12 +311,22 @@ button:focus {outline:0;}
             margin: 4px 0
         }
     }
-    @media (max-width: $screen-sm ) {
-            padding: 0 10px;
-            .search-button{
-                width: 100%;
-            }
+
+    .search-button {
+        color: #fff;
+        background-color: rgba(255,255,255,.35);
+        &:hover {
+            color: #fff;
+            background-color: rgba(255,255,255,.5);
+            
         }
+    }
+    @media (max-width: $screen-sm ) {
+        padding: 0 10px;
+        .search-button{
+            width: 100%;
+        }
+    }
 }
 .logo-header {
     @include text-hide;

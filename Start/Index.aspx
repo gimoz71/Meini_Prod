@@ -37,7 +37,7 @@
                         <asp:DropDownList id="ddl_superficie" runat="server" CssClass="form-control"></asp:DropDownList>
                     </div>
                     <div class="form-group">
-                        <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-danger btn-block search-button ">
+                        <asp:LinkButton ID="btn_cerca" runat="server" Cssclass="btn btn-block search-button ">
                             <%=Lingua.CaricaLingua("lgl_ricerca_cerca")%>
                         </asp:LinkButton>
                     </div>
@@ -59,11 +59,11 @@
                         agraria.</p>
                     <h2>
                         Servizi all’acquirente</h2>
-                    <ul>
+                    <ul class="list">
                         <li>Visita agli immobili e consegna di materiale illustrativo
                             <li>Accertamenti urbanistici, catastali e ipotecari</li>
-                            <li>Assistenza nella trattativa nella trattativa</li>
-                            <li>Assistenza nella trattativa per l'eventuale accensione di un mutuo</li>
+                            <li>Assistenza nella trattativa </li>
+                            <li>Assistenza per l'eventuale accensione di un mutuo</li>
                             <li>Proposta di acquisto e/o contratto preliminare e relativa registrazione ai sensi
                                 di Legge</li>
                             <li>Coordinamento dei professionisti che dovessero partecipare al buon esito della compravendita
@@ -74,7 +74,7 @@
                     </ul>
                     <h2>
                         Servizi al venditore</h2>
-                    <ul>
+                    <ul class="list">
                         <li>Servizio fotografico, analisi dei documenti e stima del valore dell'immobile</li>
                         <li>Sottoscrizione dell’incarico di vendita in esclusiva o non in esclusiva (a discrezione
                             del venditore)</li>
@@ -89,10 +89,15 @@
                         <li>Servizi post-vendita su richiesta</li>
                     </ul>
                     <p>
-                        In caso di incarico di vendita in esclusiva garantiamo un servizio fotografico aereo
+                        <strong>In caso di incarico di vendita in esclusiva</strong> garantiamo un servizio fotografico aereo
                         realizzato con drone e la promozione dell’immobile su tutti i nostri canali pubblicitari,
                         inclusi la rivista “VILLE &amp; CASALI” ed i portali internazionali LUXURYESTATE
                         e HOUSE24</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>I nostri canali pubblicitari</h2>
                 </div>
             </div>
             <div class="col-lg-12">
