@@ -11816,6 +11816,21 @@ button:focus {
   }
 }
 
+.PagerContainerTable td {
+  border: solid 1px #ccc;
+  border-left: none;
+}
+.PagerContainerTable td a, .PagerContainerTable td span {
+  padding: 8px 16px !important;
+  display: inline-block;
+}
+.PagerContainerTable td.PagerInfoCell {
+  padding: 10px 18px !important;
+}
+.PagerContainerTable td:first-of-type {
+  border-left: solid 1px #ccc;
+}
+
 .logo-header {
   font: 0/0 a;
   color: transparent;
@@ -12024,6 +12039,10 @@ footer .fiaip-footer {
 
 .contactPageForm {
   text-align: left;
+}
+
+.wow {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

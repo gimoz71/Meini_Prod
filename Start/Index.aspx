@@ -53,7 +53,7 @@
                     <h2>
                         L’agenzia</h2>
                     <p>
-                        Operiamo in Toscana nelle provincie di Pisa e Livorno e concentriamo la nostra attività
+                        Operiamo in Toscana nelle province di Pisa e Livorno e concentriamo la nostra attività
                         sulla vendita di casolari, ville e aziende agricole. Il titolare, Cristiano Meini,
                         si è laureato nel 1996 presso l’università di Pisa con tesi sul diritto di prelazione
                         agraria.</p>

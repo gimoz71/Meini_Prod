@@ -95,13 +95,29 @@
             display: none;
             margin-top: 30px;
         }
+        .prev, .next {
+            font-size: 60px !important;
+            margin-top: -60px !important;
+            text-shadow: 1px 1px 0 #000  !important;
+            
+        }
+        .prev:hover, .next:hover {
+            text-decoration: none !important;
+        }
+    
         @media print {
-            #header,navbar,footer, .text, button, .btn, #ct-ultimate-gdpr-cookie-open, .mySlides .numbertext, .mySlides .text {
+            #header, .navbar,footer, .text, button, .btn, #ct-ultimate-gdpr-cookie-open, .mySlides .numbertext, .mySlides .text, .prev, .next {
                 display: none;
+            }
+            .foto_immobile, .scheda_immobile {
+                width: 50% !important;
+                float: left !important; 
             }
             .break {page-break-after: always;}
             .print-header {
                 display: block;
+                margin-left: 20px;
+                width: 90%;
             }
         }
     </style>
@@ -203,23 +219,18 @@
         }
     </style>
     <div class="print-header">
-    <table><tr><td style="padding-right: 20px;">
-        <img src="/Assets/images/logo-email.png"></td>
-        <td>
-        <small>Piazza Matteotti n. 2 - 56046 Riparbella (PISA) | REA: PI190214 P.IVA: 018350490<br>Tel. 0586-699310 - Fax 0586-699310 | cristiano@meini.it - cristiano@pec.meini.it</small>
-        </td>
-        </tr>
-        </table>
+        <img src="/Assets/images/intestazione_stampa.jpg">
     </div>
     <div class="content">
         <div class="container">
-            <div class="row break">
-                <div class="col-md-8 wow fadeInUpSmall slsh" data-wow-delay="0s">
+            <div class="row ">
+                
+                <div class="col-md-8 foto_immobile wow fadeInUpSmall slsh" data-wow-delay="0s">
                     <div class="slideshow-container">
                         
                         <asp:Repeater ID="rpt_immagini" runat="server">
                             <ItemTemplate>
-                                <div class="mySlides wow fadeIn">
+                                <div class="mySlides">
                                     <div class="numbertext"><asp:Literal ID="ltl_number" runat="server"></asp:Literal></div>
                                     <img class="thumb-item" src="/assets/images/slider_home.jpg" id="img_immagine" runat="server">
                                     <div class="text"><asp:Literal ID="ltl_caption" runat="server"></asp:Literal></div>
@@ -232,7 +243,7 @@
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </div>
-                <div class="col-md-4 wow fadeInUpSmall" data-wow-delay="0.3s">
+                <div class="col-md-4 scheda_immobile wow fadeInUpSmall" data-wow-delay="0.3s">
                     <h3 class="immobile"><asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal></h3>
                     <div class="col-md-12">
                         <h5 class="tipologia"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></h5>
@@ -420,6 +431,7 @@
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
+                
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
