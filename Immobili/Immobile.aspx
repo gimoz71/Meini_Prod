@@ -232,7 +232,7 @@
                             <ItemTemplate>
                                 <div class="mySlides">
                                     <div class="numbertext"><asp:Literal ID="ltl_number" runat="server"></asp:Literal></div>
-                                    <img class="thumb-item" src="/assets/images/slider_home.jpg" id="img_immagine" runat="server">
+                                    <img class="thumb-item" src="/assets/images/placeholder.jpg" id="img_immagine" runat="server">
                                     <div class="text"><asp:Literal ID="ltl_caption" runat="server"></asp:Literal></div>
                                 </div>
                             </ItemTemplate>
