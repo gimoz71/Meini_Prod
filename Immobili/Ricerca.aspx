@@ -58,7 +58,7 @@
                 <div class="pull-right search_prop_calc">
                     <pager:MesysPager ID="pager1" runat="server" OnCommand="pager_Command" PageClause="Pagina"
                         OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="12"
-                        Visible="false" />
+                        Visible="false" GenerateHyperlinks="true" QueryStringParameterName="PAGE" />
                 </div>
             </div>
         </div>
