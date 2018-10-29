@@ -314,7 +314,7 @@
                     <div class="col-xs-12"style="margin-top: 20px;">
                         <a href="#" onClick="window.print()" class="btn btn-danger">Stampa scheda</a> 
                         
-                        <a data-toggle="modal" href="#contactAgent" class="btn btn-danger hidden"
+                        <a data-toggle="modal" href="#contactAgent" class="btn btn-danger"
                             id="btn_info" runat="server">
                             <%=Lingua.CaricaLingua("lgl_immobile_richiedi_info")%>
                         </a>
