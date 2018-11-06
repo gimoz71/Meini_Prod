@@ -36,7 +36,7 @@
                                                 <asp:Literal ID="ltl_annuncio" runat="server"></asp:Literal></h5>
                                             <ul class="info">
                                                 <li><span>Riferimento:</span><asp:Literal ID="ltl_riferimento" runat="server"></asp:Literal></li>
-                                                <li><span>Tipo annuncio:</span><asp:Literal ID="ltl_tipo_annuncio" runat="server"></asp:Literal></li>
+                                                <li><span>Condizioni:</span><asp:Literal ID="ltl_condizioni" runat="server"></asp:Literal></li>
                                                 <li><span>Classe en:</span>F</li>
                                             </ul>
                                         </div>
@@ -45,7 +45,7 @@
                                                 Prezzo: <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></h5>
                                             <ul class="info">
                                                 <li><span>Abitazione:</span><asp:Literal ID="ltl_superfice" runat="server"></asp:Literal></li>
-                                                <li><span>Camere:</span><asp:Literal ID="ltl_camere" runat="server"></asp:Literal></li>
+                                                <li><span>Accessori:</span><asp:Literal ID="ltl_garage_mq" runat="server"></asp:Literal></li>
                                                 <li><span>Terreno:</span><asp:Literal ID="ltl_bagni" runat="server"></asp:Literal></li>
                                             </ul>
                                         </div>
