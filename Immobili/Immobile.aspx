@@ -244,16 +244,25 @@
                     </div>
                 </div>
                 <div class="col-md-4 scheda_immobile wow fadeInUpSmall" data-wow-delay="0.3s">
-                    <h3 class="immobile"><asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal></h3>
+                    <h3 class="immobile">
+                        <asp:Literal ID="ltl_tab_comune_desc" runat="server"></asp:Literal>
+                        ,&nbsp;
+                        <asp:Literal ID="ltl_tab_provincia_cod" runat="server"></asp:Literal>
+                        &nbsp;
+                        <asp:Literal ID="ltl_localita" runat="server"></asp:Literal>
+                        &nbsp;
+                        <asp:Literal ID="ltl_ubicazione" runat="server"></asp:Literal>
+                    </h3>
                     <div class="col-md-12">
                         <h5 class="tipologia"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></h5>
                         <ul class="info">
                             <li><span>Riferimento:</span><asp:Literal ID="ltl_riferimento" runat="server"></asp:Literal></li>
                             <li><span>Abitazione:</span><asp:Literal ID="ltl_superfice" runat="server"></asp:Literal></li>
+                            <li><span>Terreno:</span><asp:Literal ID="ltl_terreno" runat="server"></asp:Literal></li>
                             <li><span>Accessori:</span><asp:Literal ID="ltl_garage_mq" runat="server"></asp:Literal></li>
                             <li><span><%=Lingua.CaricaLingua("lgl_immobili_info_ce")%>:</span><asp:Literal ID="ltl_ai_classe" runat="server"></asp:Literal></li>
                             <li><span>Condizioni:</span><asp:Literal ID="ltl_condizioni" runat="server"></asp:Literal></li>
-                            <li><span>Prezzo:</span> <asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></li>
+                            <li><span>Prezzo:</span><asp:Literal ID="ltl_prezzo" runat="server"></asp:Literal></li>
                         </ul>
                     </div>
                     <div class="row hidden">
