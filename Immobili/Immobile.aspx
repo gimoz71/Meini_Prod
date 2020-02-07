@@ -247,8 +247,8 @@
                     <h3 class="immobile">
                         <asp:Literal ID="ltl_tab_comune_desc" runat="server"></asp:Literal>
                         ,&nbsp;
-                        <asp:Literal ID="ltl_tab_provincia_cod" runat="server"></asp:Literal>
-                        &nbsp;
+                        (<asp:Literal ID="ltl_tab_provincia_cod" runat="server"></asp:Literal>)
+                        &nbsp;-&nbsp;
                         <asp:Literal ID="ltl_localita" runat="server"></asp:Literal>
                         &nbsp;
                         <asp:Literal ID="ltl_ubicazione" runat="server"></asp:Literal>
