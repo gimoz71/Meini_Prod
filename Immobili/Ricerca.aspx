@@ -30,7 +30,14 @@
                                     </div>
                                     <div class="col-md-8">
                                         <h3 class="immobile">
-                                            <asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal></h3>
+                                            <asp:Literal ID="ltl_tab_comune_desc" runat="server"></asp:Literal>
+                                            ,&nbsp;
+                                            <asp:Literal ID="ltl_tab_provincia_cod" runat="server"></asp:Literal>
+                                            &nbsp;
+                                            <asp:Literal ID="ltl_localita" runat="server"></asp:Literal>
+                                            &nbsp;
+                                            <asp:Literal ID="ltl_ubicazione" runat="server"></asp:Literal>
+                                        </h3>
                                         <div class="col-md-6">
                                             <h5 class="tipologia">
                                                 <asp:Literal ID="ltl_annuncio" runat="server"></asp:Literal></h5>
